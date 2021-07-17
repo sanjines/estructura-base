@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 2;
+}
+
+p {
+  line-height: 1.2;
+}
+
+@media only screen and (min-width: 48rem) {
+  body {
+    background-color: #73ff00;
+  }
+}
+@media only screen and (min-width: 62rem) {
+  body {
+    background-color: gray;
+  }
+}
+@media only screen and (min-width: 75rem) {
+  body {
+    background-color: #807700;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

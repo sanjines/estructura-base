@@ -1,0 +1,8 @@
+extends ../templates/template
+append header-elements
+  include ../components/text-info
+append button
+  include ../components/button
+  div(class= 'header__wave' style='height: 150px; overflow: hidden;')
+    svg(viewbox='0 0 500 150' preserveaspectratio='none' style='height: 100%; width: 100%;')
+      path(d='M-8.17,121.88 C149.99,150.00 336.62,41.94 511.57,136.67 L500.00,150.00 L0.00,150.00 Z' style='stroke: none; fill: #f5deb3; --darkreader-inline-stroke:none; --darkreader-inline-fill:#33a6ff;' data-darkreader-inline-stroke='' data-darkreader-inline-fill='')

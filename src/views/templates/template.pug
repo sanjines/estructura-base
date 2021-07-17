@@ -1,0 +1,13 @@
+doctype
+html(lang="es")
+  block config
+    include ../config/config
+  head
+    block head
+      include ../includes/head
+      title= `${siteTitle} | ${mainPageTitle}`
+      each vincCss in vincDir
+        link(rel="stylesheet" href= `./css/${vincCss}.css`)
+  body
+    each modules in vincJs
+      script(src= `../dev/js/${modules}.js` type= 'module')

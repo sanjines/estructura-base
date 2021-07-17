@@ -1,0 +1,54 @@
+//- 
+  TITULO GENERAL DEL SITIO
+  -//
+- let siteTitle = ['ESPERANZA en JESUS'];
+- let mainPageTitle = ['Home'];
+
+  //- ======== Titulos de Paginas ======== //
+
+- let pageTitles = ['jesus', 'nosotros', 'palabra'];
+
+- let vincDir = ['style', 'all'];
+
+- let vincJs =['index-dom'];
+
+-let vincImg = ['./assets/img/'];
+
+
+  //- slider Config
+-
+  let img = [
+    {
+      img:'img_lights_wide', 
+      imgText:'cruz',
+    },
+    {
+      img:'img_nature_wide', 
+      imgText:'cambio',
+    },
+        {
+      img:'img_mountains_wide', 
+      imgText:'montaña',
+    },
+  ]
+
+  //- MIXINS
+
+mixin cards(className, nameButon, nameSpan, text)
+  div(class= className)
+    button(class= nameButon)
+      span(class= nameSpan)= text
+
+  //- BUTTON
+
+-
+  let button = [
+    {
+      btnName: 'wrapper-button',
+      btnChildName: 'button',
+      btnSubElementName: 'button__icon',
+      btnSubElementNameInfo: 'button__text-info',
+      btnSubElementTextInfo: 'contactanos'
+    },
+    
+  ]

@@ -1,0 +1,55 @@
+@use '../config/mixin-media'as mda;
+@use '../config/functions'as f;
+
+// ==============================================
+// - ***TAMAÑO DE PANTALLA SMALL (sm) ***
+// ==============================================
+
+$small: 576px;
+// $small: 445px;
+
+@media only screen and (min-width: f.rem($small)) {
+	@include mda.small();
+
+	// body {
+	//   background-color: peru;
+	// }
+}
+
+// ==============================================
+// - *** TAMAÑO DE PANTALLA MEDIUM (md) ***
+// ==============================================
+$medium: 768px;
+
+@media only screen and (min-width: f.rem($medium)) {
+	@include mda.medium();
+
+	body {
+		background-color: rgb(115, 255, 0);
+	}
+}
+
+// ==============================================
+// -   *** TAMAÑO DE PANTALLA LARGE (lg)***
+// ==============================================
+$large: 992px;
+
+@media only screen and (min-width: f.rem($large)) {
+	@include mda.large();
+	body {
+		background-color: gray;
+	}
+}
+
+// ==============================================
+// -*** TAMAÑO DE PANTALLA EXTRA LARGE (xl)***
+// ==============================================
+$extra-large: 1200px;
+
+@media only screen and (min-width: f.rem($extra-large)) {
+	@include mda.extra-large();
+
+	body {
+		background-color: rgb(128, 119, 0);
+	}
+}
